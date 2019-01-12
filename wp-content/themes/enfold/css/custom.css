@@ -14,11 +14,20 @@ Desktop Styles
 @media only screen and (max-width: 767px) {
   /* Add your Mobile Styles here */ }
 
+.html_header_top.html_header_sticky #main {
+  padding-top: 0 !important; }
+
+.html_header_top.html_header_sticky #header {
+  background-color: transparent; }
+  .html_header_top.html_header_sticky #header #header_main {
+    background-color: transparent;
+    border-bottom: none; }
+  .html_header_top.html_header_sticky #header .header_bg {
+    background-color: transparent; }
+
 .block_wrap .container .content {
   margin-right: 0;
   border-right: none !important; }
-  .block_wrap .container .content .index_fir_block {
-    width: 100%; }
-    .block_wrap .container .content .index_fir_block > div {
-      display: inline-block;
-      width: 50%; }
+
+.block_wrap.index_fir_wrap .container .content {
+  padding-top: 320px; }

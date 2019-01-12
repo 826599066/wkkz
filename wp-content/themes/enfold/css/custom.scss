@@ -26,19 +26,36 @@ Desktop Styles
     /* Add your Mobile Styles here */
   
   }
+  .html_header_top{
+      &.html_header_sticky{
+        #main{
+            padding-top:0 !important;
+        }
+        #header{
+            background-color: transparent;
+            #header_main{
+                background-color: transparent;
+                border-bottom: none;
+            }
+            .header_bg{
+                background-color: transparent;
+            }
+        }
+      }
+  }
   .block_wrap{
     .container{
       .content{
         margin-right: 0;
         border-right: none !important;
-        .index_fir_block{
-            width: 100%;
-            & > div{
-                display: inline-block;
-                width: 50%;
-            }
-        }
 
       }
+    }
+    &.index_fir_wrap{
+        .container{
+            .content{
+                padding-top:320px;
+            }
+        }
     }
   }
