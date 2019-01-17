@@ -79,15 +79,15 @@ Desktop Styles
             padding-top: 20px;
             color: #999;
             font-size: 16px; }
+  .home .block_wrap .function_config_subtitle {
+    font-size: 16px;
+    color: #999;
+    text-align: center;
+    line-height: 1; }
   .home .block_wrap.function_config .container .content {
     padding-top: 10px; }
     .home .block_wrap.function_config .container .content .function_config_wrap .index_block_title_temp {
       padding-bottom: 30px; }
-    .home .block_wrap.function_config .container .content .function_config_wrap .function_config_subtitle {
-      font-size: 16px;
-      color: #999;
-      text-align: center;
-      line-height: 1; }
     .home .block_wrap.function_config .container .content .function_config_wrap .function_config_image {
       padding-top: 60px;
       font-size: 0; }
@@ -125,12 +125,14 @@ Desktop Styles
       font-size: 16px; }
   .home .block_wrap.system_flow_wrap {
     min-height: 790px; }
+    .home .block_wrap.system_flow_wrap .flex_column_table {
+      padding-top: 55px; }
     .home .block_wrap.system_flow_wrap .system_flow_wrap_pc {
       display: block !important; }
     .home .block_wrap.system_flow_wrap .system_flow_wrap_phone {
       display: none !important; }
     .home .block_wrap.system_flow_wrap .index_block_title_temp {
-      padding-bottom: 50px; }
+      padding-bottom: 30px; }
     .home .block_wrap.system_flow_wrap .content {
       padding-bottom: 0; }
     .home .block_wrap.system_flow_wrap .system_flow_right_wrap .flow_show_more a {

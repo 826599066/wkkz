@@ -96,6 +96,7 @@
             <main role="main" itemprop="mainContentOfPage" class="template-page content  av-content-full alpha units">
                 <div class="post-entry post-entry-type-page post-entry-2">
                     <div class="index_block_title_temp">系统流程图</div>
+                    <div class="function_config_subtitle">公众号/小程序 实现，无需安装APP</div>
                     <div class=" flex_column_table system_flow_wrap_pc  av-equal-height-column-flextable">
                         <div class="left_text_wrap  flex_column av_one_half  flex_column_table_cell av-equal-height-column av-align-middle av-zero-column-padding first  avia-builder-el-1  el_before_av_one_half  avia-builder-el-first   " style="border-radius:0px; ">
                             <img src="<?php 

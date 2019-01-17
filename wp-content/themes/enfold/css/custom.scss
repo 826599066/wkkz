@@ -114,6 +114,12 @@ Desktop Styles
         }
   
       }
+      .function_config_subtitle{
+        font-size: 16px;
+        color: #999;
+        text-align: center;
+        line-height: 1;
+      }
       &.function_config{
         .container{
           .content{
@@ -121,12 +127,6 @@ Desktop Styles
             .function_config_wrap{
               .index_block_title_temp{
                 padding-bottom: 30px;
-              }
-              .function_config_subtitle{
-                font-size: 16px;
-                color: #999;
-                text-align: center;
-                line-height: 1;
               }
               .function_config_image{
                 padding-top: 60px;
@@ -181,6 +181,10 @@ Desktop Styles
       }
       &.system_flow_wrap{
         min-height: 790px;
+        .flex_column_table{
+          padding-top: 55px;
+
+        }
         .system_flow_wrap_pc{
           display: block !important;
         }
@@ -188,7 +192,7 @@ Desktop Styles
           display: none !important;
         }
         .index_block_title_temp{
-          padding-bottom:50px;
+          padding-bottom:30px;
         }
         .content{
           padding-bottom: 0;
