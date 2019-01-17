@@ -62,10 +62,26 @@
             <div class="content">
                 <div class="function_config_wrap">
                     <div class="index_block_title_temp">功能结构</div>
-                    <div class="function_config_image"><img src="<?php
-                        $index_third_block = get_field('index_third_block');
-                        echo $index_third_block['function_config_image'];
-                    ?>">
+                    <div class="function_config_subtitle">公众号/小程序 实现，无需安装APP</div>
+                    <div class="function_config_image">
+                        <?php 
+                            $index_third_block=get_field('index_third_block');
+                            foreach($index_third_block['function_config_image_repeat'] as $index => $function_image_item){
+                        ?>
+                        <div class="function_config_item">
+                            <div class="function_top_image">
+                                <img src="<?php echo $function_image_item['function_config_image'];  ?>">
+                             <?php if(($index+1)!=count($index_third_block['function_config_image_repeat'])){ ?>   
+                                <img class='arrow' src="<?php echo $index_third_block['function_config_arrow'];  ?>">
+                             <?php } ?>
+                            </div>
+                            <div class="function_bottom_content">
+                                <?php foreach($function_image_item['function_config_title_repeat'] as $function_config_title_item) { ?>
+                                <div><?php echo $function_config_title_item['function_config_title']; ?></div>
+                                <?php } ?>
+                            </div>
+                        </div>
+                        <?php } ?>
                     </div>
                     <div class="function_config_content"><?php echo $index_third_block['function_config_content'];  ?></div>
                 </div>

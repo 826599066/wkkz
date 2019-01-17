@@ -81,8 +81,43 @@ Desktop Styles
             font-size: 16px; }
   .home .block_wrap.function_config .container .content {
     padding-top: 10px; }
+    .home .block_wrap.function_config .container .content .function_config_wrap .index_block_title_temp {
+      padding-bottom: 30px; }
+    .home .block_wrap.function_config .container .content .function_config_wrap .function_config_subtitle {
+      font-size: 16px;
+      color: #999;
+      text-align: center;
+      line-height: 1; }
     .home .block_wrap.function_config .container .content .function_config_wrap .function_config_image {
-      text-align: center; }
+      padding-top: 60px;
+      font-size: 0; }
+      .home .block_wrap.function_config .container .content .function_config_wrap .function_config_image .function_config_item {
+        position: relative;
+        display: inline-block;
+        width: 25%;
+        min-height: 300px;
+        vertical-align: top;
+        text-align: center; }
+        .home .block_wrap.function_config .container .content .function_config_wrap .function_config_image .function_config_item .function_top_image {
+          position: relative;
+          min-height: 174px; }
+          .home .block_wrap.function_config .container .content .function_config_wrap .function_config_image .function_config_item .function_top_image .arrow {
+            position: absolute;
+            top: calc(50% - 7px);
+            right: -30px; }
+        .home .block_wrap.function_config .container .content .function_config_wrap .function_config_image .function_config_item .function_bottom_content {
+          position: absolute;
+          bottom: 0;
+          left: calc( 50% - 30px);
+          display: inline-block;
+          text-align: left; }
+          .home .block_wrap.function_config .container .content .function_config_wrap .function_config_image .function_config_item .function_bottom_content > div {
+            font-size: 16px;
+            color: #4ca2e0; }
+            .home .block_wrap.function_config .container .content .function_config_wrap .function_config_image .function_config_item .function_bottom_content > div:last-of-type {
+              padding-top: 10px;
+              font-size: 20px;
+              color: #0067be; }
     .home .block_wrap.function_config .container .content .function_config_wrap .function_config_content {
       padding-top: 50px;
       padding-bottom: 30px;

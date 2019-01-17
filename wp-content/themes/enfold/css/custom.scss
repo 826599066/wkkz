@@ -119,8 +119,52 @@ Desktop Styles
           .content{
             padding-top:10px;
             .function_config_wrap{
-              .function_config_image{
+              .index_block_title_temp{
+                padding-bottom: 30px;
+              }
+              .function_config_subtitle{
+                font-size: 16px;
+                color: #999;
                 text-align: center;
+                line-height: 1;
+              }
+              .function_config_image{
+                padding-top: 60px;
+                font-size: 0;
+                .function_config_item{
+                  position: relative;
+                  display: inline-block;
+                  width: 25%;
+                  min-height: 300px;
+                  vertical-align: top;
+                  text-align: center;
+                  .function_top_image{
+                    position: relative;
+                    min-height: 174px;
+                    .arrow{
+                      position: absolute;
+                      top: calc(50% - 7px);
+                      right: -30px;
+                    }
+                  }
+                  .function_bottom_content{
+                    position: absolute;
+                    bottom: 0;
+                    left: calc( 50% - 30px );
+                    display: inline-block;
+                    text-align: left;
+                    & > div{
+                      font-size: 16px;
+                      color: #4ca2e0;
+                      &:last-of-type{
+                        padding-top: 10px;
+                        font-size: 20px;
+                        color: #0067be;
+                      }
+                    }
+
+                  }
+                }
               }
               .function_config_content{
                 padding:{
