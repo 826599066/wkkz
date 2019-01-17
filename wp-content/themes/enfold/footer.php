@@ -61,7 +61,17 @@
 
 						?>
 
-
+						<div class="container">
+							<div class="friendly_link">
+								<span>友情链接:</span>
+								<?php 
+								$friendly_link=get_field( 'friendly_link','option');
+									foreach($friendly_link as $friendly_link_item){
+								?>
+								<a href="<?php echo $friendly_link_item['friendly_link_url'];  ?>"><?php echo $friendly_link_item['friendly_link_title'];   ?></a>
+								<?php } ?>
+							</div>
+						</div>
 					</div>
 
 
@@ -100,7 +110,7 @@
 				<footer class='container_wrap socket_color' id='socket' <?php avia_markup_helper(array('context' => 'footer')); ?>>
                     <div class='container'>
 
-                        <span class='copyright'><?php echo $copyright . $kriesi_at_backlink; ?></span>
+                        <span class='copyright'><?php $kriesi_at_backlink=''; echo $copyright . $kriesi_at_backlink; ?></span>
 
                         <?php
                         	if(avia_get_option('footer_social', 'disabled') != "disabled")

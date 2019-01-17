@@ -549,8 +549,45 @@ if ( ! function_exists( '_wp_render_title_tag' ) )
 }
     
 
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page(array(
+		'page_title' 	=> 'Page Footer Settings',
+		'menu_title'	=> 'Footer Settings',
+		'menu_slug' 	=> 'theme-general-settings',
+		'redirect'		=> false
+	));
 
-
+}
+function footer_col_one($attr, $content) {
+	$footer_logo_left=get_field( 'footer_logo_left','option');
+	$footer_logo_right=get_field( 'footer_logo_right','option');
+	$contact_us=get_field( 'contact_us','option');
+	$footer_logo_html="<div class='footer_left_wrap'>";
+	$footer_logo_html.="<div class='footer_logo_wrap'>";
+	$footer_logo_html.="<div><img src=".$footer_logo_left."></div>";
+	$footer_logo_html.="<div><img src=".$footer_logo_right."></div>";
+	$footer_logo_html.="</div>";
+	$footer_logo_html.="<div class='footer_contact_us'><div class='footer_float_right'>";
+	$footer_logo_html.="<div class='contact_us_title'>联系我们</div>";
+	foreach($contact_us as $contact_us){
+		$footer_logo_html.="<div class='contact_item'><span>".$contact_us['contact_title'].":</span><span>".$contact_us['contact_info']."</span></div>";
+	}
+	$footer_logo_html.="</div>";
+	$footer_logo_html.="</div>";
+	$footer_logo_html.="</div>";
+    return $footer_logo_html;
+}
+add_shortcode('footer_col_one', 'footer_col_one');
+function footer_col_two($attr, $content) {
+	$qr_code=get_field( 'qr_code','option');
+	$contact_form_code=do_shortcode('[contact-form-7 id="134" title="Contact footer"]');
+	$footer_content_html="<div class='footer_right_wrap'>";
+	$footer_content_html.="<div class='qr_code'><img src='".$qr_code."'><div>官方客服微信</div></div>";
+	$footer_content_html.="<div class='footer_input_wrap'><div class='footer_input_title'>悟空快装，工单售后服务说到做到</div><div>".$contact_form_code."</div></div></div>";
+	$footer_content_html.="</div>";
+	return $footer_content_html;
+}
+add_shortcode('footer_col_two', 'footer_col_two');
 /*
  *  register custom functions that are not related to the framework but necessary for the theme to run
  */
